@@ -1,0 +1,103 @@
+/* 文章详情 */
+.blog{
+    width:100%;
+    text-align: left;
+    padding:20px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    border:1px solid #e3e3e3;
+    box-shadow: 1px 1px 5px rgba(97,97,97,.48);
+    box-sizing: border-box;
+}
+.blog_title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #13102b;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.blog_title:hover{
+    color: #337ab7;
+}
+.blog_msg{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b9b9b9;
+    font-size: 14px;
+}
+.blog_content{
+    margin-top: 20px;
+    font-size: 14px;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+/* 留言板 */
+.blog_comments{
+    width:100%;
+    box-sizing: border-box;
+    text-align: left
+}
+.blog_comments_msg{
+    margin-top:20px;
+    padding:10px;
+    display: inline-block;
+}
+.blog_comment{
+    background: #d9edf7;
+    border:1px dashed #7ca4c1;
+    width:100%;
+    box-sizing: border-box;
+    padding:10px 10px 20px 10px;
+    margin-top:10px;
+    color: #31708f;
+}
+.blog_comment span{
+    display: block;
+    padding-left: 10px;
+}
+.blog_comment span a{
+    cursor: pointer;
+}
+.blog_comment div{
+    display: inline-block;
+    padding-left: 10px;
+    margin-top:10px;
+}
+/* 发表评论 */
+.send-comments{
+    width:100%;
+    text-align: left;
+    padding:20px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    border:1px solid #e3e3e3;
+    box-shadow: 1px 1px 5px rgba(97,97,97,.48);
+    box-sizing: border-box;
+    margin-top:50px;
+    margin-bottom: 20px;
+}
+.send-comments div{
+    margin-bottom: 5px;
+}
+.send-comments input,textarea,button{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 12px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #555;
+}
+.send-comments input{
+    width:220px;
+    margin:10px;
+    margin-left: 0;
+    /* line-height: 1.42857143; */
+}
+.send-comments textarea{
+    width:95%;
+    height: 100px;
+}
+.send-comments button:hover{
+    background-color: #d4d4d4;
+}
