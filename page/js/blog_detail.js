@@ -38,7 +38,7 @@ var blog_detail = new Vue({
             var result = resp.data.data[0]
             blog_detail.title = result.title
             blog_detail.tags = result.tags
-            blog_detail.ctime = result.ctime
+            blog_detail.ctime = new Date(result.ctime*1000).toLocaleDateString()
             blog_detail.views = result.views
             blog_detail.content = result.content
 

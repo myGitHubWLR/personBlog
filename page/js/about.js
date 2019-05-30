@@ -94,7 +94,9 @@ var blog_comments = new Vue({
             url:"/queryComment?blog_id=" + bid
         }).then(function(resp){
             blog_comments.commentList = resp.data.data
-            
+            for(var i = 0; i < blog_comments.commentList.length; i++){
+                blog_comments.commentList[i].ctime = new Date(blog_comments.commentList[i].ctime*1000).toLocaleDateString()
+            }
             for(var i = 0; i < blog_comments.commentList.length; i ++){
                 // 点击回复
                 if(blog_comments.commentList[i].parent > -1){

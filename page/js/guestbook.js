@@ -95,9 +95,9 @@ var blog_comments = new Vue({
         }).then(function(resp){
             // console.log(resp)
             blog_comments.commentList = resp.data.data
-            // for(var i = 0; i < blog_comments.commentList.length; i++){
-            //     blog_comments.commentList[i].ctime = blog_comments.commentList[i].ctime
-            // }
+            for(var i = 0; i < blog_comments.commentList.length; i++){
+                blog_comments.commentList[i].ctime = new Date(blog_comments.commentList[i].ctime*1000).toLocaleDateString()
+            }
             for(var i = 0; i < blog_comments.commentList.length; i ++){
                 // 点击回复
                 if(blog_comments.commentList[i].parent > -1){

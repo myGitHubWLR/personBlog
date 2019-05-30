@@ -36,7 +36,7 @@ path.set("/insertComment",insertComment)
 //生成验证码
 function queryRandomCode(request,response){
     var img = captcha.create({width:100,height:34,fontSize:50})
-    // console.log(img){text:,data:}
+    // console.log(img)
     response.writeHead(200)
     response.write(respUtil.writeResult("success","验证成功",img))
     response.end()

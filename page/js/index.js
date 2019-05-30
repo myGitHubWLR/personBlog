@@ -142,7 +142,7 @@ var articleList = new Vue({
                         var temp = {}
                         temp.title = result[i].title
                         temp.content = result[i].content
-                        temp.date =result[i].ctime
+                        temp.date =new Date(result[i].ctime*1000).toLocaleDateString()
                         temp.views = result[i].views
                         temp.tags = result[i].tags
                         temp.id = result[i].id
@@ -182,7 +182,7 @@ var articleList = new Vue({
                         
                         temp.title = result[i].title
                         temp.content = result[i].content
-                        temp.date = result[i].ctime
+                        temp.date = new Date(result[i].ctime*1000).toLocaleDateString()
                         temp.views = result[i].views
                         temp.tags = result[i].tags
                         temp.id = result[i].id
@@ -228,7 +228,8 @@ var articleList = new Vue({
                             var temp = {}
                             temp.title = result[i].title
                             temp.content = result[i].content
-                            temp.date = result[i].ctime
+                            temp.date = new Date(result[i].ctime*1000).toLocaleDateString()
+                          
                             temp.views = result[i].views
                             temp.tags = result[i].tags
                             temp.id = result[i].id
