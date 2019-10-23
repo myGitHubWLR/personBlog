@@ -1,10 +1,10 @@
 {
   "name": "personblog",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"node build/build.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,15 @@
     "moment": "^2.24.0",
     "mysql": "^2.17.1",
     "svg-captcha": "^1.4.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myGitHubWLR/personBlog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/myGitHubWLR/personBlog/issues"
+  },
+  "homepage": "https://github.com/myGitHubWLR/personBlog#readme",
+  "description": ""
 }
